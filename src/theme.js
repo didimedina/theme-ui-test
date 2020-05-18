@@ -25,7 +25,7 @@ export default {
         secondary: '#9f8a6d',
         white: '#000'
     },
-    radii: [0, 4, 6, 8, 14, 20],
+    radii: [0, 4, 6, 8, 10, 12, 14, 16, 20, '50%'],
     space: [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160],
 
     breakpoints: ['512px', '896px', '1280px'],
@@ -34,6 +34,7 @@ export default {
 //     heading: {
 //         h1: {
 //             fontSize: [7, 10, 11, 12]
+
 //         },
 //         h2: {
 //             fontSize: [6, 8, 9, 10]

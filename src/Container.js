@@ -2,20 +2,21 @@
 import { jsx } from 'theme-ui';
 import themeAutoSize from './themeAutoSize';
 
-const Container = () => (
+const Container = (props) => {
+    const {children} = props;
+    return (
     <div
-        sx={{
-            
-            backgroundColor: 'foreground',
-            marginTop: themeAutoSize.spacers.loose,
-            padding: themeAutoSize.spacers.loose,
-            maxWidth: 1000,
-            mx: 'auto',
-            width: '100%',
+      sx={{
+          mx: 'auto',
+          width: '100%',
+          maxWidth: 800,
+          marginTop: themeAutoSize.spacers.loose
         }}
     >
+        {children}
     </div>
 
-);
+)
+    }
 
 export default Container;
