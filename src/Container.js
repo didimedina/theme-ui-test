@@ -10,7 +10,7 @@ const Container = (props) => {
           mx: 'auto',
           width: '100%',
           maxWidth: 800,
-          marginTop: themeAutoSize.spacers.loose
+          marginTop: themeAutoSize.spacer.loose
         }}
     >
         {children}

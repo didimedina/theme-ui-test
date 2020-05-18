@@ -1,5 +1,3 @@
-// import spacers from './autoSize'
-
 export default {
     fonts: {
         body: 'Georgia, Cambria, "Times New Roman", Times, serif',
@@ -29,35 +27,38 @@ export default {
     space: [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160],
 
     breakpoints: ['512px', '896px', '1280px'],
-
-
-//     heading: {
-//         h1: {
-//             fontSize: [7, 10, 11, 12]
-
-//         },
-//         h2: {
-//             fontSize: [6, 8, 9, 10]
-//         },
-//         h3: {
-//             fontSize: [5, 6, 7, 8]
-//         },
-//         h4: {
-//             fontSize: [4, 4, 5, 6]
-//         },
-//     },
-//     text: {
-//         b1: {
-//             fontSize: [3, 3, 4, 5]
-//         },
-//         b2: {
-//             fontSize: [2, 2, 3, 4]
-//         },
-//         b3: {
-//             fontSize: [1, 1, 2, 3]
-//         },
-//         b4: {
-//             fontSize: [0, 0, 1, 2]
-//         },
-//     },
 };
+
+export const heading = {
+    h1: [7, 10, 11, 12],
+    h2: [6, 8, 9, 10],
+    h3: [5, 6, 7, 8],
+    h4: [4, 4, 5, 6],
+}
+
+export const text = {
+    b1: [3, 3, 4, 5],
+    b2: [2, 2, 3, 4],
+    b3: [1, 1, 2, 3],
+    b4: [0, 0, 1, 2],
+}
+
+export const spacer = {
+    flush: 0,
+    tightest: [1, 2, 3, 4],
+    tighter: [2, 3, 5, 6],
+    tight: [3, 5, 6, 8],
+    normal: [5, 7, 9, 10],
+    loose: [6, 9, 11, 12],
+    looser: [9, 13, 14, 15],
+    loosest: [13, 16, 17, 18]
+}
+
+export const corner = {
+    edge: 0,
+    smooth: [1, 2, 3, 4],
+    smoother: [3, 4, 5, 6],
+    smoothest: [5, 6, 7, 8],
+    round: 9,
+}
+

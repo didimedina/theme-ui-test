@@ -21,7 +21,7 @@ const themeAutoSize = {
     // Theme-UI "space" options avail in theme.js:
     // 0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160
     
-    spacers: {
+    spacer: {
         flush: 0,
         tightest: [1, 2, 3, 4],
         tighter: [2, 3, 5, 6],
@@ -36,7 +36,7 @@ const themeAutoSize = {
     // 0, 4, 6, 8, 10, 12, 14, 16, 20, '100%'
     // 0(0), 4(1), 6(2), 8(3), 10(4), 12(5), 14(6), 16(7), 20(8), '50%'(9)
 
-    corners: {
+    corner: {
         edge: 0,
         smooth: [1, 2, 3, 4],
         smoother: [3, 4, 5, 6],
