@@ -56,7 +56,7 @@ export const spacer = {
 
 export const corner = {
     edge: 0,
-    smooth: [1, 2, 3, 4],
+    smooth: [1, 2, 3, 4], // this should probably change to ignore 2 breakpoints ie: 1, null, 2, null / 1,1,2,2
     smoother: [3, 4, 5, 6],
     smoothest: [5, 6, 7, 8],
     round: 9,

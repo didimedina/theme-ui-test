@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-// import themeAutoSize from './themeAutoSize';
 import Container from './Container'
 import { heading, text, corner, spacer } from './theme';
 
@@ -32,19 +31,76 @@ const Card = () => (
         > Dark mode UI design for a website is one of the most popular web design trends in 2020. Here we gathered one of the most captivating examples of dark mode design
         for websites and app interfaces from all over the web. For more dark theme website templates.
         </p>
-        <div
+        <button
           sx={{
+            border: 0,
+            outline: 'none',
+            marginTop: spacer.tight,
+            borderRadius: corner.smooth,
+            backgroundColor: 'primary',
+            fontSize: text.b3,
+            px: spacer.normal,
+            py: spacer.tighter,
+            display: 'block',
+            // width: 180,
+            color: 'white',
+            marginRight: spacer.tight
+          }}
+        >
+          Button
+        </button>
+        <button
+          sx={{
+            border: 0,
+            outline: 'none',
+            marginTop: spacer.tight,
             borderRadius: corner.smooth,
             backgroundColor: 'primary',
             fontSize: text.b2,
             px: spacer.normal,
             py: spacer.tighter,
-            display: 'inline-block',
+            display: 'block',
+            // width: 180,
+            color: 'white',
+            marginRight: spacer.tight
+          }}
+        >
+          Button
+        </button>
+        <button
+          sx={{
+            border: 0,
+            outline: 'none',
+            marginTop: spacer.tight,
+            borderRadius: corner.smooth,
+            backgroundColor: 'primary',
+            fontSize: text.b2,
+            px: spacer.loose,
+            py: spacer.tight,
+            display: 'block',
+            // width: 180,
             color: 'white'
           }}
         >
-          Touch Me!
-        </div>
+          Button
+        </button>
+        <button
+          sx={{
+            border: 0,
+            outline: 'none',
+            marginTop: spacer.tight,
+            borderRadius: corner.smooth,
+            backgroundColor: 'primary',
+            fontSize: text.b1,
+            px: spacer.loose,
+            py: spacer.tight,
+            display: 'block',
+            // width: 180,
+            color: 'white'
+          }}
+        >
+          Button
+        </button>
       </div>
     </Container>
 );

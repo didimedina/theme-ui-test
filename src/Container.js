@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import themeAutoSize from './themeAutoSize';
+import { spacer } from './theme';
+
 
 const Container = (props) => {
     const {children} = props;
@@ -10,7 +11,7 @@ const Container = (props) => {
           mx: 'auto',
           width: '100%',
           maxWidth: 800,
-          marginTop: themeAutoSize.spacer.loose
+          marginTop: spacer.loose
         }}
     >
         {children}
