@@ -38,7 +38,7 @@ const Card = () => (
             border: 0,
             outline: 'none',
             marginTop: spacer.tight,
-            borderRadius: corner.smooth,
+            borderRadius: corner.pill,
             backgroundColor: 'primary',
             fontSize: text.t3,
             px: spacer.tight,
