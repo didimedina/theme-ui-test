@@ -1,5 +1,36 @@
+/*
 
-export default {
+Ex1: 
+- density: 0
+- breakpoint: 0
+
+... px: spacer.tight ([3, 5, 6, 8])
+                       ⬆
+    ... space[3] => 8px
+
+
+Ex2: 
+- density: 0 => space = [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160]
+
+- breakpoint: 1
+
+... px: spacer.tight ([3, 5, 6, 8])
+                          ⬆
+    ... space[5] => 12px
+
+Ex3: 
+- density: 1 => space = [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160] * 1.3
+- breakpoint: 1
+
+... px: spacer.tight ([3, 5, 6, 8])
+                          ⬆
+    ... space[5] => 8px
+
+
+*/
+
+
+export default (density) => ({
     fonts: {
         body: 'Georgia, Cambria, "Times New Roman", Times, serif',
         heading: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
@@ -25,11 +56,16 @@ export default {
         white: '#000'
     },
     radii: [0, 4, 6, 8, 10, 12, 14, 16, 20, '50%'],
-    space: [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160],
+    space: density === 'low' ? [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160] : [
+        [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160]
+    ],
+
+    // [0, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 64, 80, 96, 128, 160]
 
     breakpoints: ['512px', '896px', '1280px'],
 
-}
+
+});
 
 export const spacer = {
     flush: 0,
@@ -43,9 +79,6 @@ export const spacer = {
 }
 
 export const heading = {
-    // we should probably abstract the terms from h1 to lg,
-    // xl etc so that way else where we could correlate h1
-    // with size and weight and font, or might be overkill
     h1: [7, 10, 11, 12],
     h2: [6, 8, 9, 10],
     h3: [5, 6, 7, 8],

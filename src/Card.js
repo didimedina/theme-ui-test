@@ -47,7 +47,7 @@ const Card = () => (
             marginRight: spacer.tight
           }}
         >
-          Button
+          Really Really Long Button!
         </button>
         <button
           sx={{
