@@ -11,7 +11,7 @@ const Container = (props) => {
           mx: 'auto',
           width: '100%',
           maxWidth: 800,
-          marginTop: spacer.loose
+          marginTop: spacer.tight
         }}
     >
         {children}

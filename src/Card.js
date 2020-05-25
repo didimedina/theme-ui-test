@@ -38,7 +38,7 @@ const Card = () => (
             border: 0,
             outline: 'none',
             marginTop: spacer.tight,
-            borderRadius: corner.pill,
+            borderRadius: corner.smooth,
             backgroundColor: 'primary',
             fontSize: text.t3,
             px: spacer.tight,
@@ -48,7 +48,7 @@ const Card = () => (
             marginRight: spacer.tight
           }}
         >
-          Really Really Long Button!
+          Button!
         </button>
         <button
           sx={{
